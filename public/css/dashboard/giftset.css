@@ -1,0 +1,192 @@
+/*===========================
+    Giftset Dashboard Style 
+=============================*/
+
+/* ------- giftset index page ------- */
+/* giftset container */
+.giftset-container {
+    width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* giftset content */
+.giftset-content-wrapper {
+    display: flex;
+    flex: 0 1 50%;
+    flex-flow: row wrap;
+}
+
+/* giftset thumbnail */
+.giftset-thumbnail-wrapper {
+    flex: 0 1 50%;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+}
+.thumbnail-wrapper {
+    max-width: 200px;
+    max-height: 170px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.thumbnail-wrapper > img {
+    width: 14em;
+}
+
+/* giftset detail and options */
+.giftset-detail-wrapper {
+    display: flex;
+    flex: 0 1 50%;
+    flex-flow: column wrap;
+    padding-bottom: 2.3em;
+    justify-content: space-between;
+}
+.detail-wrapper > p { margin-bottom: 1.5px; }
+
+.giftset-detail-wrapper > .option-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+.giftset-detail-wrapper > .option-wrapper > form {  margin-left: 1em; }
+
+
+/* ------- create giftset productvariant page ------- */
+/* giftset table row */
+.giftset-table tr:hover {
+    background: #eee;
+}
+.highlight-row {
+    background: #eee;
+}
+
+
+/* ------- create giftset page ------- */
+/* giftset add container */
+.giftset-add-container {
+    padding: 2rem 2rem 2rem 4rem;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.giftset-header-text {
+    color: #707070;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* giftset add form wrapper */
+.giftset-add-form-wrapper {
+    display: flex;
+    margin-top: 2em;
+    flex-flow: column wrap;
+}
+.giftset-form-row {
+    display: flex;
+    padding-left: 2em;
+    margin-top: .5em;
+    flex-flow: row wrap; 
+}
+.giftset-form-row > span { font-size: 18px; }
+/* text date and number input */
+.giftset-form-row > input {
+    border: none;
+    outline: none;
+    margin-left: 2em;
+    color: #707070;
+    border-bottom: .5px solid rgb(199, 196, 196);
+    font-weight: bolder;
+}
+/* thumbnail input */
+#thumbnail-add {
+    display: flex;
+    margin-top: 2em;
+    flex-flow: column wrap;
+}
+.giftset-thumbnail-wrapper {
+    height: 215px;
+    max-width: 260px;
+    max-height: 215px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.giftset-thumbnail-wrapper > label > img { width: 260px; }
+
+
+/* ------- giftset detail page ------- */
+/* giftset detail container */
+.giftset-detail-container > .giftset-header-text {
+    margin-top: 1em;
+}
+
+/* giftset body */
+.giftset-detail-body-wrapper {
+    /* width: 90%; */
+    display: flex;
+    margin-top: 2em;
+    flex-flow: row wrap;
+}
+
+/* giftset thumbnail and detail */
+.giftset-info-wrapper {
+    display: flex;
+    flex: 0 1 25%;
+    align-items: center;
+    flex-flow: column wrap;
+}
+/* thumbnail */
+.giftset-thumbnail-wrapper {
+    display: flex;
+    height: 215px;
+    max-height: 215px;
+    overflow: hidden;
+    align-content: center;
+}
+.giftset-thumbnail-wrapper > img { width: 260px; }
+/* detail info */
+.giftset-detail-info-wrapper {
+    margin: 1em 0 .5em 0;
+    text-align: center;
+    font-weight: bold;
+}
+.giftset-detail-info-wrapper > p > span { font-weight: normal; }
+.giftset-info-wrapper > a { align-self: stretch; }
+.giftset-description-wrapper {
+    padding: 1em;
+    text-align: left;
+    background-color: white;
+}
+.giftset-description-wrapper > p { white-space: pre-wrap; }
+.giftset-description-wrapper > #description-text {
+    margin-top: -10px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* giftset product variants table list */
+.giftset-pv-table-wrapper {
+    display: flex;
+    flex: 0 1 55%;
+    flex-flow: column wrap;
+}
+
+/*=================
+    Medai Query
+==================*/
+/* ------- giftset index page ------- */
+
+/* ------- create giftset productvariant page ------- */
+
+/* ------- create giftset page ------- */
+
+/* ------- giftset detail page ------- */
+@media screen and (max-width: 1460px) {
+    .giftset-pv-table-wrapper {
+        margin-left: 2.5em;
+        flex: 0 1 60%;
+    }
+}

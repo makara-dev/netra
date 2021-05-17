@@ -1,0 +1,44 @@
+/* ==============================
+    Dashboard Sale StyleSheet 
+================================= */
+.form-control{
+    border: 1px solid #6f6f70;
+}
+/* breadcrumb heading input */
+.breadcrumb-search-box {
+    padding: .5em 2em .5em 2em;
+    outline: unset;
+    font-size: 12px;
+    border-radius: 5px;
+    border: .5px solid rgba(161, 160, 160, 0.494);
+}
+
+/* ########### Index Page ########### */
+
+/* sale content */
+
+/* sale table */
+.sale-table-listing-wrapper thead{
+    background-color: #EFEFEF;
+}
+.sale-table-listing-wrapper thead tr th {
+    color: black;
+    font-size: 13px;
+}
+.sale-table-listing-wrapper tbody{
+    border-bottom: .5px solid rgba(190, 187, 187, 0.494);
+}
+.table td, 
+.table th {
+    vertical-align: middle;
+}
+
+/* ########### Media Query ########### */
+/* ----- desktop ----- */
+
+
+/* ----- tablet ----- */
+
+
+/* ----- mobile ----- */
+

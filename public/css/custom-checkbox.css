@@ -1,0 +1,154 @@
+  /************
+    Invoice
+**************/
+/* cart nav breadcrumb */
+.cart-nav-wrapper {
+  margin-bottom: 0 !important;
+}
+
+/* receipt header */
+.receipt-header > p { font-size: 8px; }
+
+.invoice-status-text { font-size: 15px; }
+
+.logo-wrapper > img { width: 5em !important; }
+
+.header-text > h5 {
+  font-size: 10px;
+  font-weight: 800 !important;
+}
+.header-text > div > p {
+  margin-bottom: 0;
+  font-size: 8px;
+}
+
+/* receipt addresses */
+.address > .address-text ,
+.bill-to > .bill-text {
+  font-size: 8px;
+}
+
+.address > p, 
+.bill-to > p {
+  margin-bottom: 0;
+  font-size: 8px;
+}
+
+/* receipt table */
+/* product list */
+.table { margin-bottom: 0; }
+
+.table th, .table td {
+  padding: 0;
+  border-top: none;
+}
+
+.table > thead > tr {
+  margin-bottom: 2em;
+  border-bottom: 5px solid #FDE5E6 !important;
+}
+.table > thead > tr > th {
+  font-size: 6px;
+}
+
+.table > tbody > tr > td {
+  font-size: 5px;
+  margin-top: 20px;
+}
+
+.td-img-wrapper {
+  display: flex;
+  max-height: 45px;
+  overflow: hidden;
+  justify-content: center;
+}
+.td-img-wrapper > img { width: 25px; }
+
+/* receipt footer */
+.payment-method > p { font-size: 8px; }
+
+.payment-method > .payment-logo-wrapper { font-size: 8px; }
+.payment-logo-wrapper > img { width: 20px; }
+.payment-method > .product-subtotal > p,
+.product-subtotal > p {
+  margin-bottom: 0;
+  font-size: 8px;
+}
+
+/* btn return home */
+.btn-return-home {
+  margin-bottom: 3em !important;
+  font-size: 10px;
+}
+
+/* Media Query */
+/************
+  tablet
+*************/
+@media only screen and (min-width: 650px) {
+  /* receipt header */
+  .header-text > h5 { font-size: 12px; }
+
+  /* receipt table  */
+  /* product list */
+  .table > thead > tr > th {
+      font-size: 8px;
+  }
+  .table > tbody > tr > td {
+      font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 775px) {
+  /* receipt header */
+  .invoice-status-text { font-size: 24px; }
+
+  .header-text > h5 {
+      font-size: 18px;
+      font-weight: 700 !important;
+  }
+
+  /* receipt logo */
+  .logo-wrapper > img { width: 8em !important; }
+
+  /* receipt table */
+  /* product list */
+  .td-img-wrapper { max-height: 75px; }
+  .td-img-wrapper > img { width: 45px; }
+
+  .table > tbody > tr > td {
+      font-size: 11px;
+  }
+
+  /* btn return home */
+  .btn-return-home { font-size: 17px; }
+}
+
+/************
+  desktop
+*************/
+@media only screen and (min-width: 990px) {
+  /* cart nav breadcrumb */
+  .cart-nav-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .invoice-wrapper { width: 807px !important; }
+  .logo-wrapper > img { width: 9em !important; }
+
+  .receipt-body { margin-top: 2rem; }
+
+  .receipt-wrapper {
+      padding-top: 1em;
+      padding-bottom: 5em;
+  }
+
+  .btn-return-home { margin-bottom: 7rem !important };
+}
+
+@media only screen and (min-width: 1600px) {
+  .invoice-wrapper { width: 780px !important; }
+} 

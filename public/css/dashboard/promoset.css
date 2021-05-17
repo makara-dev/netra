@@ -1,0 +1,265 @@
+/*===========================
+   Promoset Dashboard Style 
+=============================*/
+
+/* ------- promoset index page ------- */
+/* promoset container */
+.promoset-container {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* promoset content */
+.promoset-content-wrapper {
+    display: flex;
+    flex: 0 1 50%;
+    margin-bottom: 5em;
+    flex-flow: row wrap;
+}
+
+/* promoset thumbnail */
+.promoset-thumbnail-wrapper {
+    flex: 0 1 50%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.thumbnail-wrapper {
+    max-width: 200px;
+    max-height: 170px;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.thumbnail-wrapper > img {
+    width: 14em;
+}
+
+/* giftset detail and options */
+.promoset-detail-wrapper {
+    display: flex;
+    flex: 0 1 50%;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.detail-wrapper > p { margin-bottom: 1.5px; }
+.promoset-detail-wrapper > .options-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+.promoset-detail-wrapper > .options-wrapper > form {  margin-left: 1em; }
+
+/* ------- create promoset product variant page ------- */
+.promoset-table tr:hover {
+    background: #eee;
+}
+.highlight-row {
+    background: #eee;
+}
+
+.promosetPv-add-container {
+    padding: 2rem 2rem 2rem 4rem;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.promoset-header-text {
+    color: #707070;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* ------- create promoset page ------- */
+/* promoset adding form block container */
+.promoset-add-container {
+    padding: 2rem 2rem 2rem 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.promoset-header-text {
+    color: #707070;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* promoset thumbnail adding block */
+.promoset-add-thumbnail-wrapper {
+    flex: 0 1 25%;
+    flex-flow: column wrap;
+}
+.promoset-thumbnail-wrapper { margin-top: 1em; }
+.promoset-thumbnail-wrapper > label {
+    width: 250px;
+    height: 250px;
+    max-height: 250px;
+    display: flex;
+    overflow: hidden;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.promoset-thumbnail-wrapper > label > img {
+    width: 100%;
+}
+
+/* promoset infomation */
+.promoset-add-info-wrapper {
+    flex: 0 1 50%;
+    flex-flow: column wrap;
+}
+.promoset-add-info-row {
+    display: flex;
+    margin-bottom: .5em;
+    flex-flow: column wrap;
+}
+.promoset-add-info-row span {
+    font-weight: bold;
+}
+.promoset-add-info-row input {
+    border: none;
+    outline: none;
+    margin: 0 .5em 0 .5em;
+    border-bottom: 1px solid rgb(202, 198, 198);
+}
+.promoset-add-info-row p {
+    margin-left: 1.5em;
+}
+.num-input { 
+    width: 45px; 
+}
+.promoset-add-info-row > p > a {
+    margin-left: 1em;
+    font-size: 12px;
+}
+#promoset-description { 
+    margin-top: 1em; 
+}
+#promosetAddBtn {
+    width: 40px;
+    font-size: 10px;
+}
+
+/* promoset displaying data table block container */
+/* promoset table header */
+.promoset-thead tr th {
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* ------- promoset detail ------- */
+.promoset-detail-body-wrapper {
+    /* width: 90%; */
+    display: flex;
+    margin-top: 2em;
+    flex-flow: row wrap;
+}
+
+/* promoset thumbnail and detail */
+.promoset-info-wrapper {
+    display: flex;
+    flex: 0 1 25%;
+    align-items: center;
+    flex-flow: column wrap;
+}
+/* thumbnail */
+.promoset-thumbnail-wrapper {
+    display: flex;
+    height: 250px;
+    max-height: 250px;
+    overflow: hidden;
+    align-content: center;
+}
+.promoset-thumbnail-wrapper > img { width: 260px; }
+/* detail info */
+.promoset-detail-info-wrapper {
+    width: 18em;
+    display: flex;
+    font-weight: bold;
+    margin: 1em 0 .5em 0;
+    flex-flow: column wrap;
+}
+.promoset-detail-info-wrapper > p > span { font-weight: normal; }
+.promoset-description-wrapper {
+    padding: 1em;
+    padding: 1em 1em 4em 1em;
+    text-align: left;
+    background-color: white;
+}
+.promoset-description-wrapper > p { white-space: pre-wrap; }
+.promoset-description-wrapper > #description-text {
+    margin-top: -10px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* promoset product variants table list */
+.promoset-product-table-wrapper { flex: 0 1 45%; }
+
+/*================
+    Media Query 
+==================*/
+/* desktop */
+@media only screen and (max-width: 1600px) {
+    .promoset-product-table-wrapper {
+        flex: 0 1 60%;
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1540px) {
+    /* index page */
+    .promoset-container { width: 90%; }
+
+    .promoset-add-thumbnail-wrapper { flex: 0 1 35%; }
+}
+
+@media only screen and (max-width: 1275px) {
+    /* index page */
+    .thumbnail-wrapper {
+        max-width: 150px;
+        max-height: 120px;
+    }
+    .thumbnail-wrapper > img { width: 100%; }
+    .invalid-img { width: 8em !important; }
+
+    .promoset-thead tr th { font-size: 11px; }
+}
+
+@media only screen and (max-width: 1200px) {
+    /* promoset info */
+    /* thumbnail */
+    .promoset-thumbnail-wrapper {
+        height: 200px;
+        max-height: 200px;
+    }
+    .promoset-thumbnail-wrapper > img { width: 200px; }
+    
+    /* info */
+    .promoset-detail-info-wrapper { width: 14em; }
+    .promoset-detail-info-wrapper a { font-size: 10px; }
+    p { font-size: 12px; }
+
+    /* promoset table listing */
+    .promoset-product-table-wrapper { flex: 0 1 65%; }
+    h3 { font-size: 15px; }
+    .table .thead-btn tr th { font-size: 10px; }
+    .table td, .table th { font-size: 10px; }
+}
+
+/* tablet */
+@media screen and(max-width: 992px) {
+
+}
+
+/* mobile */
+@media screen and (max-width: 425px){
+
+}

@@ -1,0 +1,10 @@
+.form-control{
+    border: 1px solid #6f6f70;
+}
+.fa-upload{
+    position:absolute;
+    bottom: 20px;
+    left: 85%;
+    font-size: 20px;
+    cursor: pointer;
+}  

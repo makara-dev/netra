@@ -1,0 +1,75 @@
+/*==========================
+    Dashboard Add Product 
+============================*/
+/* Product Main Wrapper */
+.product-image-wrapper {
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+#productNameInput,
+#categorySelect {
+    font-size: 25px;
+}
+
+#costInput,
+#priceInput,
+#quantityNumInput,
+.attribute-text {
+    font-size: 22px;
+}
+
+#productVariantSelect > .form-group {
+    margin-bottom: .5em;
+}
+
+.form-group > span { font-size: 20px; }
+
+/* Media Query */
+/* desktop */
+@media only screen and (max-width: 1440px) {
+    .product-variant-wrapper {
+        padding-left: 5em !important;
+    }
+
+    /* attribute */
+    #productVariantSelect {
+        flex-direction: column;
+    }
+    #attribute-add-btn {
+        text-align: end;
+    }
+    #productVariantSelect > .form-group {
+        display: flex;
+        flex-flow: row wrap;
+        margin-right: 0;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 1278px) {
+    .product-variant-wrapper {
+        padding-left: 8em !important;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .product-variant-wrapper {
+        padding-left: 0em !important;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .product-variant-wrapper {
+        padding-left: 3em !important;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+    .product-variant-wrapper {
+        padding-left: 8em !important;
+    }
+}
+
+/* mobile */

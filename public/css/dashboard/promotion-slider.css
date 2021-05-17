@@ -1,0 +1,126 @@
+/*==============================
+    Promotion Slider Style 
+================================*/
+
+/******************** Index Page Style *********************/
+.promotion-slide-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+}
+
+.cursor-pointer { cursor: pointer; }
+
+/* btn upload wrapper */
+.btn-upload-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+.btn-upload-wrapper button { margin: 0 0 2.5em 1em; }
+
+/* web page promotion slide */
+.web-promotion-slide-wrapper {
+    width: 80%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.card-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+.card-wrapper > .image-block {
+    max-width: 650px;
+    height: 235px;
+    max-height: 235px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+.card-wrapper img { width: 100%; }
+
+.option-block {
+    padding: 0em 2em 2.4em 2em;
+    display: flex;
+    flex: 1 0 auto;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+/* .option-block > .option-description { font-size: 12px; } */
+.option-btn-wrapper { 
+    margin-top: 4em;
+    display: flex; 
+} 
+
+/* mobile promotion slide */
+.mobile-promotion-slide-wrapper {
+    width: 80%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.mobile-promotion-slide-wrapper .card-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+.mobile-promotion-slide-wrapper > .card-wrapper > .image-block,
+.mobile-promotion-slide-wrapper form > .card-wrapper > .image-block{
+    max-width: 240px;
+    max-height: 310px;
+    height: 310px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+.mobile-promotion-slide-wrapper form > .card-wrapper img { width: 100%; }
+.mobile-promotion-slide-wrapper form > .card-wrapper > .option-block {
+    padding: 0em 2em 1em 2em;
+}
+.mobile-promotion-slide-wrapper form > .card-wrapper > .option-block button{
+    width: 18em;
+}
+
+/*==================
+    Medial Query 
+====================*/
+
+/* desktop */
+@media only screen and (max-width: 1650px) {
+    .web-promotion-slide-wrapper { width: 100%; }
+
+    .card-wrapper > .image-block {
+        max-width: 600px;
+        height: 280px;
+        max-height: 280px;
+    }
+
+    .mobile-promotion-slide-wrapper > .card-wrapper > .image-block {
+        max-width: 250px;
+        height: 350px;
+        max-height: 350px;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    .card-wrapper > .image-block {
+        max-width: 550px;
+        height: 240px;
+        max-height: 240px;
+    }
+    .option-block { padding: 0em 2em 1.5em 1.5em; }
+    
+    .mobile-promotion-slide-wrapper > .card-wrapper > .image-block {
+        max-width: 200px;
+        height: 310px;
+        max-height: 310px;
+    }
+    .mobile-promotion-slide-wrapper > .card-wrapper > .option-block {
+        padding: 0em 2em 2.1em 1.5em;
+    }
+}
+
+/* tablet */
+
+
+/* mobile */
+

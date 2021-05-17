@@ -1,0 +1,61 @@
+/*====================
+    Anyting Panorama
+======================*/
+.anything-panorama-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* web version */
+.web-panorama-wrapper {
+    flex: 0 1 50%;
+    display: flex;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.web-image-block {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 220px;
+    max-height: 220px;
+    border: 1px solid gray;
+    background-color: white;
+}
+.web-image-block > label > .web-image {
+    width: 650px;
+}
+
+.btn-upload-wrapper {
+    margin-top: 1em;
+}
+
+.option-btn-wrapper {
+    display: flex;
+    margin-top: 1em;
+    flex-flow: row wrap;
+}
+
+/* mobile version */
+.mobile-panorama-wrapper {
+    flex: 0 1 50%;
+    display: flex;
+}
+
+.mobile-image-block {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 220px;
+    max-height: 220px;
+    border: 1px solid gray;
+    background-color: white;
+}
+.mobile-image-block > label > .mobile-image {
+    width: 400px;
+}

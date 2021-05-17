@@ -1,0 +1,44 @@
+.footer-body {
+    width: 80%;
+    color: #707070;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-body > div > div > ul > li > a {
+    color: #707070 !important;
+    font-size: 12px;
+}
+
+.footer-body > div > div { padding-bottom: 1em; }
+
+.footer-body > div > div > h5 {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+/* Media Query */
+/* mobile */
+@media only screen and (min-width: 767px){
+    .footer-body > div > div > h5 { font-size: 14px; }
+
+    .list-inline-item { margin-right: .3rem !important; }
+
+    .contact-us > h5, h6, 
+    .contact-us > p {
+        font-size: 12px;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 992px) {
+    .footer-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* laptop */
+@media only screen and (min-width: 1199px){
+    .footer-icon { margin: unset; }
+}

@@ -1,0 +1,581 @@
+/* ============ Product Slide Show =========== */
+.web-product-slider { display: none !important; }
+#main-content > 
+.mobile-promotion-slider {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.mobile-carousel-img-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 325px;  
+    max-height: 325px;
+}
+
+.mobile-carousel-img-wrapper >img {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel {
+    width: 90% !important;
+    margin: 10px auto 0 auto;
+}
+
+/* slick slider arrow */
+.slick-prev{ left: -10px !important; }
+.slick-next{ right: -10px !important; }
+
+.slick-prev, .slick-next{ z-index: 99; }
+
+.slick-prev:before, 
+.slick-next:before {
+    color: black !important;
+}
+
+.carousel-image-wrapper > img {
+    width: 100%;
+    display: block;
+}
+
+/* ============ Featured Product List  =========== */
+.border-line {
+    margin-top: 20px;
+    border-top: 4px solid #691C56;
+}
+.featured-product-wrapper { 
+    font-family: Helvetica;
+}
+
+.featured-brand-heading {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 750;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #691c56;
+}
+
+.featured-product-wrapper > ul { 
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 20px;
+    list-style-type: none;
+    justify-content: space-evenly; 
+}
+.featured-product-wrapper > ul > li > a {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #691c56;
+    text-decoration: none;
+}
+
+.featured-brand-body {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.featured-product-card-container { 
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.featured-product-card-wrapper {
+    flex: 0 1 45%;
+    margin: 0 auto 1em auto;
+}
+
+.featured-image-wrapper {
+    height: 162px;
+    max-height: 162px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+.featured-image-wrapper > 
+.featured-image {
+    width: 130px;
+}
+
+.featured-description { 
+    margin-top: .7em;
+    text-align: center; 
+}
+.featured-description > h6 , 
+.featured-description > p { 
+    font-weight: bolder;
+    margin-bottom: 1px;
+    font-size: 11px;
+}
+
+/*==== Anything You Want To Put Panorama ==== */
+#desktop-panorama { display: none; }
+
+.anything-panorama-wrapper {
+    display: flex;
+    margin: 1em auto 2em auto;
+}
+
+.anything-panorama-image-wrapper {
+    width: 100%;
+    height: 180px;
+    max-height: 180px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F0F0;
+    color: #4D4D4D;
+}
+.anything-panorama-image-wrapper > img { width: 100%; }
+
+.anything-panorama-image-wrapper span {
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============ Recommended Product =========== */
+.recommend-product-wrapper { 
+    width: 100%;
+    margin: 0 auto 30px auto;
+}
+
+.recommend-heading-text-wrapper {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #691C56;
+}
+.recommend-heading-text-wrapper > span {
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.recommend-product-body-wrapper { 
+    width: 90%;
+    margin: 2em auto 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.recommend-product-card-wrapper {
+    flex: 0 1 45%;
+    margin: 0 auto 1em auto;
+}
+
+.recommend-image-wrapper {
+    height: 162px;
+    max-height: 162px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+.recommend-image-wrapper > 
+.recommend-image {
+    width: 130px;
+}
+
+/* ============ Best Seller Product =========== */
+.best-seller-product-wrapper {
+    width: 100%;
+    margin: 0 auto 30px auto;
+}
+
+.best-seller-product-heading-text-wrapper {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #691C56;
+}
+.best-seller-product-heading-text-wrapper > span {
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.best-seller-product-body-wrapper {
+    width: 90%;
+    margin: 2em auto 0 auto; 
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.best-seller-product-card-wrapper {
+    flex: 0 1 45%;
+    margin: 0 auto 1em auto;
+}
+
+.best-seller-image-wrapper {
+    height: 162px;
+    max-height: 162px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+.best-seller-image-wrapper > 
+.best-seller-image {
+    width: 130px;
+}
+
+.best-seller-description { 
+    margin-top: .7em;
+    text-align: center; 
+}
+.best-seller-description > h6 , 
+.best-seller-description > p { 
+    font-weight: bolder;
+    margin-bottom: 1px;
+    font-size: 11px;
+}
+
+/* ============ Instagarm Post =========== */
+.instagram-post-wrapper{
+    width: 100%;
+    background-color: #E5E5E5;
+}
+
+.instagram-post-heading-text-wrapper{
+    padding-top: 20px;
+    text-align: center;
+}
+.instagram-post-heading-text-wrapper > h5 { padding-bottom: 10px; }
+.instagram-post-heading-text-wrapper > span { letter-spacing: 2px; }
+
+.instagram-post-body-wrapper {
+    width: 90%;
+    margin: 2em auto 0 auto; 
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.instagram-post-card-wrapper {
+    flex: 0 1 45%;
+    margin: 0 auto 1em auto;
+}
+
+.instagram-image-wrapper {
+    height: 152px;
+    max-height: 152px;
+    display: flex;
+    outline: none;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.instagram-image-wrapper > 
+.instagram-image {
+    width: 120px;
+}
+
+.instagram-post-body-wrapper > .slick-prev { margin-top: -25px; }
+.instagram-post-body-wrapper > .slick-next {  margin-top: -23px; }
+
+.instagram-description { 
+    margin-top: .7em;
+    text-align: center; 
+}
+.instagram-description > h6 , 
+.instagram-description > p { 
+    font-weight: bolder;
+    margin-bottom: 1px;
+    font-size: 11px;
+}
+
+
+/* ===============
+    Media Query 
+==================*/
+/* mobile */
+@media only screen and (min-width: 414px){
+    /*  featured brand, 
+        recommend product,
+        best seller product,
+        instagram post,
+    */
+    .featured-brand-body,
+    .recommend-product-body-wrapper,
+    .best-seller-product-body-wrapper,
+    .instagram-post-body-wrapper { 
+        width: 80%; 
+    }
+    
+    .featured-product-wrapper > ul {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .featured-image-wrapper,
+    .recommend-image-wrapper,
+    .best-seller-image-wrapper,
+    .instagram-image-wrapper {
+        height: 172px;
+        max-height: 172px;
+    }
+    .featured-image-wrapper > .featured-image,
+    .recommend-image-wrapper > .recommend-image,
+    .best-seller-image-wrapper > .best-seller-image,
+    .instagram-image-wrapper > .instagram-image { 
+        width: 140px; 
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    /*  featured brand, 
+        recommend product, 
+        best seller product
+    */
+    .featured-brand-body, 
+    .recommend-product-body-wrapper,
+    .best-seller-product-body-wrapper,
+    .instagram-post-body-wrapper { 
+        width: 70%; 
+    }
+    
+    .featured-image-wrapper > .featured-image , 
+    .recommend-image-wrapper > .recommend-image,
+    .best-seller-image-wrapper > .best-seller-image,
+    .instagram-image-wrapper > .instagram-image { 
+        width: 150px; 
+    }
+
+    .featured-image-wrapper,
+    .recommend-image-wrapper,
+    .best-seller-image-wrapper,
+    .instagram-image-wrapper {
+        height: 182px;
+        max-height: 182px;
+    }
+    
+    .featured-description > h6, 
+    .best-seller-description > h6,
+    .instagram-description > h6,
+    .featured-description > p,
+    .best-seller-description > p,
+    .instagram-description > p {
+        font-size: 12px;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 992px) {
+    /* product slider */
+    .mobile-promotion-slider { display: none !important; }
+    .web-product-slider { display: flex !important; }
+    
+    /* feature product  */
+    .border-line { display: none; }
+
+    .featured-brand-heading { 
+        margin-top: 35px;
+        font-size: 15px; 
+    }
+
+    .featured-product-wrapper > ul {         
+        width: 40%; 
+        margin-bottom: 30px;
+    }
+
+    .featured-product-wrapper > ul > li > a { font-size: 13px; }
+
+    /* featured product, instagram post */
+    .featured-brand-body,
+    .instagram-post-body-wrapper { 
+        width: 75%; 
+    }
+
+    .featured-product-card-wrapper,
+    .instagram-post-card-wrapper { 
+        flex: 0 1 25%; 
+    }
+    
+    .featured-description,
+    .instagram-description {
+        margin-top: 1.5em; 
+    }
+    
+    .featured-image-wrapper,
+    .instagram-image-wrapper {
+        height: 162px;
+        max-height: 162px;
+    }
+    .featured-image-wrapper > .featured-image,
+    .instagram-image-wrapper > .instagram-image {
+        width: 130px;
+    }
+
+    .featured-description > h6, 
+    .best-seller-description > h6, 
+    .instagram-description > h6, 
+    .featured-description > p, 
+    .best-seller-description > p, 
+    .instagram-description > p {
+        font-size: 10px;
+    }
+
+    /* anything you want to put panorama */
+    #mobile-panorama { display: none !important; }
+    #desktop-panorama { display: flex; }
+
+    .anything-panorama-wrapper { width: 87%; }
+
+    .anything-panorama-image-wrapper {
+        height: 190px;
+        max-height: 190px;
+    }
+    .anything-panorama-image-wrapper > img { width: unset; }
+    
+    .text-bar-wrapper, 
+    .recommend-heading-text-wrapper, 
+    .best-seller-product-heading-text-wrapper {
+        width: 87%;
+    }
+
+    /* recommend product  */
+    .recommend-ge-wrapper {
+        height: 202px;
+        max-height: 202px;
+    }
+    .recommend-image-wrapper > 
+    .recommend-image {
+        width: 170px;
+    }
+
+    /* attribute remove for flickity to work  */
+    /* recommend product, best seller product, */
+    .recommend-heading-text-wrapper,
+    .best-seller-product-heading-text-wrapper {
+        margin: 0 auto 0 auto;
+        align-items: center;
+        justify-content: left;
+        height: 50px;
+        padding-left: 3em;
+    }
+    .recommend-heading-text-wrapper > span, 
+    .best-seller-product-heading-text-wrapper > span { 
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .recommend-product-body-wrapper,
+    .best-seller-product-body-wrapper {
+        width: 80%; 
+        display: block;
+    }
+    
+    .recommend-product-card-wrapper, 
+    .best-seller-product-card-wrapper {
+        flex: unset;
+        width: 25%;
+    }   
+}
+
+/* desktop */
+@media only screen and (min-width: 1135px) {
+    .anything-panorama-image-wrapper > img { width: 1215px; }
+}
+
+@media only screen and (min-width: 1400px) { 
+    /* promotion carousel */
+    .carousel { width: 88% !important; } 
+
+    /* feature product, instagram post */
+    .featured-brand-body, 
+    .instagram-post-body-wrapper {
+        width: 65%;
+    }
+
+    /* recommend product */
+    .recommend-product-body-wrapper {
+        width: 70%;
+    }
+    .recommend-image-wrapper {
+        height: 272px;
+        max-height: 272px;
+    }
+    .recommend-image-wrapper > 
+    .recommend-image {
+        width: 210px;
+    }
+
+    /* best seller product  */
+    .best-seller-product-body-wrapper {
+        width: 70%;
+    }
+
+    .best-seller-image-wrapper {
+        height: 202px;
+        max-height: 202px;
+    }
+    .best-seller-image-wrapper > 
+    .best-seller-image {
+        width: 170px;
+    }
+
+    /* flickity style */
+    .flickity-viewport { height: 280px !important; }
+
+    /* anything you want to put panorama */
+    .anything-panorama-image-wrapper > img {
+        width: 1345px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    /* featured product */
+    .featured-brand-body { width: 65%; }
+
+    .featured-brand-heading { font-size: 17px; }
+    .featured-product-wrapper > ul > li > a { font-size: 15px; }
+}
+
+@media only screen and (min-width: 1550px) {
+    /* featured product, instagram post */
+    .featured-image-wrapper,
+    .instagram-image-wrapper {
+        height: 182px;
+        max-height: 182px;
+    }
+    .featured-image-wrapper > .featured-image,
+    .instagram-image-wrapper > .instagram-image {
+        width: 150px;
+    }
+
+    /* instagram post */
+    .instagram-post-heading-text-wrapper > span { font-size: 18px; }
+    .instagram-post-heading-text-wrapper > small { font-size: 17px; }
+
+    /* featured product, best seller product, instagram post, */
+    .featured-description > h6, 
+    .best-seller-description > h6, 
+    .instagram-description > h6, 
+    .featured-description > p, 
+    .best-seller-description > p, 
+    .instagram-description > p {
+        font-size: 13px;
+    }
+    
+    /* anything you want to put panorama */
+    .anything-panorama-image-wrapper > img { width: 1670px; }
+}
